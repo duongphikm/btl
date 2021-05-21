@@ -39,21 +39,21 @@ public class Simulation2DCircle extends Simulation2D {
 	}
 
 	public void logSim() {
-		MainForm.writeFile("Simulation: 2D Circle");
-		MainForm.writeFile("======================");
-		MainForm.writeFile("");
+		Main1.writeFile("Simulation: 2D Circle");
+		Main1.writeFile("======================");
+		Main1.writeFile("");
 		if (optDistance != 0) {
-			MainForm.writeFile("Min-Sum:  " + String.valueOf(optDistance));
-			MainForm.writeFile("Min-Max:  " + String.valueOf(optMax));
-			MainForm.writeFile("Feasible: " + String.valueOf(feasible()));
+			Main1.writeFile("Min-Sum:  " + String.valueOf(optDistance));
+			Main1.writeFile("Min-Max:  " + String.valueOf(optMax));
+			Main1.writeFile("Feasible: " + String.valueOf(feasible()));
 		}
 		((CircleBoundary) boundary).log();
 
 		for (int i = 0; i < numSensors; i++) {
 			sensors[i].log();
 		}
-		MainForm.writeFile("------------------------------------------------------");
-		MainForm.writeFile("");
+		Main1.writeFile("------------------------------------------------------");
+		Main1.writeFile("");
 
 	}
 }

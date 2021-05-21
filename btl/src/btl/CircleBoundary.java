@@ -50,10 +50,10 @@ public class CircleBoundary extends Boundary {
 
 	public void log() {
 
-		MainForm.writeFile("Circle Boundary");
-		MainForm.writeFile("center: (" + (String.valueOf(center.getX())) + ", " + (String.valueOf(center.getY())) + ")");
-		MainForm.writeFile("radius:    " + (String.valueOf(radius)));
-		MainForm.writeFile("");
+		Main1.writeFile("Circle Boundary");
+		Main1.writeFile("center: (" + (String.valueOf(center.getX())) + ", " + (String.valueOf(center.getY())) + ")");
+		Main1.writeFile("radius:    " + (String.valueOf(radius)));
+		Main1.writeFile("");
 
 	}
 }

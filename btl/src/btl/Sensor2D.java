@@ -102,17 +102,17 @@ public class Sensor2D extends Sensor {
 
 	public void log() {
 
-		MainForm.writeFile("Sensor");
-		MainForm.writeFile(
+		Main1.writeFile("Sensor");
+		Main1.writeFile(
 				"location:     (" + (String.valueOf(location.getX())) + ", " + (String.valueOf(location.getY())) + ")");
-		MainForm.writeFile("range:        " + (String.valueOf(range)));
+		Main1.writeFile("range:        " + (String.valueOf(range)));
 		if (moved()) {
-			MainForm.writeFile("origin:       (" + (String.valueOf(initLocation.getX())) + ", "
+			Main1.writeFile("origin:       (" + (String.valueOf(initLocation.getX())) + ", "
 					+ (String.valueOf(initLocation.getY())) + ")");
-			MainForm.writeFile("displacement: " + (String.valueOf(distanceMoved())));
+			Main1.writeFile("displacement: " + (String.valueOf(distanceMoved())));
 		}
 
-		MainForm.writeFile("");
+		Main1.writeFile("");
 
 	}
 
